@@ -33,7 +33,20 @@ Aplikasi pemesanan kopi dan makanan secara *online* berbasis mobile untuk **Clas
 1. **Clone Repository**
    ```bash
    git clone [https://github.com/Fadhillahrizqia/Clash_Coffee_Shop.git](https://github.com/Fadhillahrizqia/Clash_Coffee_Shop.git)
+ 
+2. **Buka Proyek di Android Studio**
+-    Pilih menu Open (atau klik File > Open...).
+-    Cari dan pilih folder hasil clone Clash_Coffee_Shop.
+-    Tunggu hingga proses sinkronisasi proyek (indexing / Gradle sync) selesai.
 
+3. **Menyiapkan Perangkat (Device)**
+-    Lewat HP Android Fisik (USB): Hubungkan HP Android ke komputer menggunakan kabel USB (pastikan fitur USB Debugging di HP sudah aktif).
+-    Lewat Emulator: Jalankan Android Virtual Device (AVD) melalui Device Manager di Android Studio.
+
+4. **Jalankan Aplikasi**
+-    Pastikan nama perangkat (HP/Emulator) kamu sudah terdeteksi di bagian toolbar atas Android Studio.
+-    Klik tombol Run (ikon segitiga hijau ▶) atau tekan Shift + F10.
+-    Aplikasi akan otomatis dikompilasi, di-install, dan langsung terbuka di HP/Emulator.
 
 ## Dokumentasi
 ## 📱 Tangkapan Layar (Screenshots)
