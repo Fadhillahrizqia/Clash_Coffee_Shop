@@ -19,11 +19,11 @@ Aplikasi pemesanan kopi dan makanan secara *online* berbasis mobile untuk **Clas
 
 ---
 
-## Teknologi yang Digunakan
+## Teknologi & Penyimpanan Data
 
-- **Frontend**: Flutter / React Native / Native Android (Sesuaikan dengan framework yang kamu gunakan)
-- **State Management**: Provider / BLoC / Redux / Context API
-- **UI Design System**: Custom Dark Mode Theme with Accent Colors (Orange & Dark Grey)
+- **Frontend**: Flutter / Android Native (Java/Kotlin)
+- **Pengolahan Data (Database)**: *Local Storage / In-Memory State* (Data tersimpan langsung di dalam perangkat/HP pengakses tanpa database server eksternal).
+- **IDE**: Android Studio
 - **Version Control**: Git & GitHub
 
 ---
