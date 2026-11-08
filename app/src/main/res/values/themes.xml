@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ClashCoffeeShop" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorOnPrimary">@color/on_accent</item>
+        <item name="colorSecondaryContainer">@color/accent_container</item>
+        <item name="colorOnSecondaryContainer">@color/accent_light</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">@color/stroke</item>
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="android:colorBackground">@color/bg_dark</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+    </style>
+</resources>

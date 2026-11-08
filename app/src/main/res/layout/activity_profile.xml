@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:letterSpacing="0.3"
+                android:text="MY ACCOUNT"
+                android:textColor="@color/accent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_greeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Halo,"
+                android:textColor="@color/text_primary"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/text_avatar"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/bg_logo"
+                android:gravity="center"
+                android:textColor="@color/on_accent"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Profile Saya"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Profile Setting"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_input"
+                android:hint="Nama"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingHorizontal="18dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:text="Save"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="18dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+</LinearLayout>

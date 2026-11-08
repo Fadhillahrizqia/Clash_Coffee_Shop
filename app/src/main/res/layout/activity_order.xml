@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fitsSystemWindows="true"
+    tools:context=".OrderActivity">
+
+    <View
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="-80dp"
+        android:background="@drawable/bg_glow_mint" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:letterSpacing="0.3"
+                android:text="DELIVERY"
+                android:textColor="@color/accent"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Alamat"
+                android:textColor="@color/text_primary"
+                android:textSize="34sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Ke mana kopimu harus dikirim?"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.25"
+                    android:text="PESANANMU"
+                    android:textColor="@color/accent"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_order_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/text_edit_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="4dp"
+                    android:text="Ubah keranjang"
+                    android:textColor="@color/accent_light"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_nama"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_input"
+                android:hint="Nama Lengkap"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingHorizontal="18dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_input"
+                android:gravity="top|start"
+                android:hint="Alamat"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="16dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edit_patokan"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_input"
+                android:gravity="top|start"
+                android:hint="Patokan atau detail lengkap"
+                android:inputType="textMultiLine"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="16dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:letterSpacing="0.25"
+                android:text="METODE PEMBAYARAN"
+                android:textColor="@color/accent"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_cod"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@drawable/bg_input"
+                    android:paddingHorizontal="14dp"
+                    android:text="Cash di tempat (COD)"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    app:buttonTint="@color/accent" />
+
+                <RadioButton
+                    android:id="@+id/radio_transfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_input"
+                    android:paddingHorizontal="14dp"
+                    android:text="Transfer Bank"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    app:buttonTint="@color/accent" />
+
+                <RadioButton
+                    android:id="@+id/radio_qris"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_input"
+                    android:paddingHorizontal="14dp"
+                    android:text="QRIS"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    app:buttonTint="@color/accent" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_order"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="28dp"
+                android:text="Order dan Kirim"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="18dp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

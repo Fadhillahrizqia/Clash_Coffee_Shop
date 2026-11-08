@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_hero"
+    android:fitsSystemWindows="true"
+    tools:context=".ConfirmationActivity">
+
+    <View
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginStart="-120dp"
+        android:layout_marginTop="-120dp"
+        android:background="@drawable/bg_glow_mint" />
+
+    <View
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="-100dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_glow_orange" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.3"
+                android:text="ORDER CONFIRMED"
+                android:textColor="@color/mint"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_greeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Halo,"
+                android:textColor="@color/text_primary"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/text_order_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/bg_ok"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
+                    android:text="OK"
+                    android:textColor="@color/mint"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/text_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Terima kasih sudah memesan."
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.25"
+                        android:text="PESANANMU"
+                        android:textColor="@color/accent"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_order_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.25"
+                        android:text="PEMBAYARAN"
+                        android:textColor="@color/accent"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:lineSpacingExtra="3dp"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.25"
+                        android:text="DIKIRIM KE"
+                        android:textColor="@color/accent"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <Button
+                android:id="@+id/button_history"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Lihat Riwayat"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:cornerRadius="18dp"
+                app:strokeColor="@color/accent" />
+
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:text="Oke"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
