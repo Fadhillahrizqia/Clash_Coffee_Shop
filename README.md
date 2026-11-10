@@ -21,7 +21,7 @@ Aplikasi pemesanan kopi dan makanan secara *online* berbasis mobile untuk **Clas
 
 ## Teknologi & Penyimpanan Data
 
-- **Frontend**: Flutter / Android Native (Java/Kotlin)
+- **Frontend**: Android Native (Kotlin)
 - **Pengolahan Data (Database)**: *Local Storage / In-Memory State* (Data tersimpan langsung di dalam perangkat/HP pengakses tanpa database server eksternal).
 - **IDE**: Android Studio
 - **Version Control**: Git & GitHub
